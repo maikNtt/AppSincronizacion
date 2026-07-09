@@ -22,12 +22,12 @@ import {
 import { useAppContext } from '../hooks/useAppContext';
 import { useDataContext } from '../hooks/useDataContext';
 import { useTheme } from '../hooks/useTheme';
-import StatCard from '../components/dashboard/StatCard';
-import QuickActionCard from '../components/dashboard/QuickActionCard';
-import KanbanPreview from '../components/dashboard/KanbanPreview';
-import DashboardMetrics from '../components/dashboard/DashboardMetrics';
-import SidebarMetrics from '../components/dashboard/SidebarMetrics';
-import AreaSelector from '../components/shared/AreaSelector';
+import StatCard from '../components/molecules/StatCard';
+import QuickActionCard from '../components/molecules/QuickActionCard';
+import KanbanPreview from '../components/organisms/KanbanPreview';
+import DashboardMetrics from '../components/organisms/DashboardMetrics';
+import SidebarMetrics from '../components/organisms/SidebarMetrics';
+import AreaSelector from '../components/molecules/AreaSelector';
 import { SCREENS, IDEA_STATUS_COLORS, INITIATIVE_STATUS_COLORS, IDEA_STATUS_LIST, INITIATIVE_STATUS_LIST } from '../utils/constants';
 
 const useStyles = makeStyles({
@@ -42,7 +42,7 @@ const useStyles = makeStyles({
     alignItems: 'stretch',
   },
   header: {
-    background: 'linear-gradient(135deg, #2B1B5E 0%, #402060 50%, #553373 100%)',
+    background: 'var(--color-dark-navy)',
     borderRadius: '16px',
     padding: '40px',
     boxShadow: '0 12px 32px rgba(43, 27, 94, 0.2)',
@@ -180,7 +180,7 @@ const useStyles = makeStyles({
   },
   sidebarIcon: {
     fontSize: '32px',
-    color: '#2B1B5E',
+    color: 'var(--color-dark-navy)',
     marginBottom: '4px',
   },
   sidebarTitle: {
@@ -230,7 +230,7 @@ const useStyles = makeStyles({
   },
   sectionIcon: {
     fontSize: '24px',
-    color: '#2B1B5E',
+    color: 'var(--color-dark-navy)',
   },
   sectionTitle: {
     fontSize: '16px',
@@ -321,7 +321,7 @@ export default function DashboardScreen() {
           className={styles.header}
           style={{
             background: isDark
-              ? 'linear-gradient(135deg, #1A1028 0%, #2D1A3F 50%, #3D2850 100%)'
+              ? 'var(--color-dark-navy)'
               : theme.headerGradient,
           }}
         >
@@ -353,7 +353,7 @@ export default function DashboardScreen() {
               color: theme.text,
             }}
           >
-            <Lightbulb24Regular className={styles.kpiMiniIcon} style={{ color: '#6B46B8' }} />
+            <Lightbulb24Regular className={styles.kpiMiniIcon} style={{ color: 'var(--color-primary)' }} />
             <div className={styles.kpiMiniValue}>{ideas.length}</div>
             <div className={styles.kpiMiniLabel}>Ideas</div>
           </div>
@@ -367,7 +367,7 @@ export default function DashboardScreen() {
               color: theme.text,
             }}
           >
-            <Board24Regular className={styles.kpiMiniIcon} style={{ color: '#2B1B5E' }} />
+            <Board24Regular className={styles.kpiMiniIcon} style={{ color: 'var(--color-dark-navy)' }} />
             <div className={styles.kpiMiniValue}>{initiatives.length}</div>
             <div className={styles.kpiMiniLabel}>Iniciativas</div>
           </div>
@@ -381,7 +381,7 @@ export default function DashboardScreen() {
               color: theme.text,
             }}
           >
-            <CheckmarkCircle24Regular className={styles.kpiMiniIcon} style={{ color: '#107C10' }} />
+            <CheckmarkCircle24Regular className={styles.kpiMiniIcon} style={{ color: 'var(--color-success)' }} />
             <div className={styles.kpiMiniValue}>{ideas.filter(i => i.status === 'Aprobada').length}</div>
             <div className={styles.kpiMiniLabel}>Aprobadas</div>
           </div>
@@ -395,7 +395,7 @@ export default function DashboardScreen() {
               color: theme.text,
             }}
           >
-            <Eye24Regular className={styles.kpiMiniIcon} style={{ color: '#2B1B5E' }} />
+            <Eye24Regular className={styles.kpiMiniIcon} style={{ color: 'var(--color-dark-navy)' }} />
             <div className={styles.kpiMiniValue}>{initiatives.filter(i => i.status === 'En Progreso').length}</div>
             <div className={styles.kpiMiniLabel}>En Progreso</div>
           </div>

@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     justifyContent: 'space-between',
     padding: '0 24px',
     height: '48px',
-    backgroundColor: '#6B46B8',
+    backgroundColor: 'var(--color-primary)',
     color: 'white',
     boxShadow: tokens.shadow4,
     position: 'sticky',

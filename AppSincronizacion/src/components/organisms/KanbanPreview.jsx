@@ -162,7 +162,7 @@ export default function KanbanPreview({ initiatives, theme, isDark }) {
                     </div>
                   </div>
                 ))
-              )}}
+              )}
             </div>
           </div>
         );

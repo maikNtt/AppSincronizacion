@@ -33,7 +33,7 @@ const useStyles = makeStyles({
   },
   headerIcon: {
     fontSize: '28px',
-    color: '#402060',
+    color: 'var(--color-secondary)',
   },
   title: {
     fontSize: '22px',
@@ -50,12 +50,12 @@ const useStyles = makeStyles({
     fontSize: '13px',
     fontWeight: '600',
     minWidth: '100px',
-    backgroundColor: '#402060',
+    backgroundColor: 'var(--color-secondary)',
     color: 'white',
     border: '1px solid #402060',
     ':hover': {
-      backgroundColor: '#553373',
-      borderColor: '#553373',
+      backgroundColor: 'var(--color-secondary)',
+      borderColor: 'var(--color-secondary)',
     },
   },
   filterButtonSecondary: {
@@ -63,11 +63,11 @@ const useStyles = makeStyles({
     fontWeight: '600',
     minWidth: '100px',
     backgroundColor: 'white',
-    color: '#402060',
+    color: 'var(--color-secondary)',
     border: '1px solid #D9C9F0',
     ':hover': {
       backgroundColor: '#F5F0F8',
-      borderColor: '#402060',
+      borderColor: 'var(--color-secondary)',
     },
   },
   ideasList: {
@@ -137,22 +137,22 @@ const useStyles = makeStyles({
     flexWrap: 'wrap',
   },
   actionButton: {
-    backgroundColor: '#402060',
+    backgroundColor: 'var(--color-secondary)',
     color: 'white',
     border: 'none',
     fontWeight: '600',
     ':hover': {
-      backgroundColor: '#553373',
+      backgroundColor: 'var(--color-secondary)',
     },
   },
   actionButtonSecondary: {
     backgroundColor: 'white',
-    color: '#402060',
+    color: 'var(--color-secondary)',
     border: '1px solid #D9C9F0',
     fontWeight: '600',
     ':hover': {
       backgroundColor: '#F5F0F8',
-      borderColor: '#402060',
+      borderColor: 'var(--color-secondary)',
     },
   },
   emptyState: {
@@ -224,7 +224,7 @@ export default function ManageIdeasScreen() {
           className={!filterStatus ? styles.filterButton : styles.filterButtonSecondary}
           appearance="secondary"
           onClick={() => setFilterStatus(null)}
-          style={!filterStatus ? { backgroundColor: '#2B1B5E', color: 'white', border: '1px solid #2B1B5E' } : {}}
+          style={!filterStatus ? { backgroundColor: 'var(--color-dark-navy)', color: 'white', border: '1px solid #2B1B5E' } : {}}
         >
           Todas ({teamIdeas.length})
         </Button>
@@ -236,7 +236,7 @@ export default function ManageIdeasScreen() {
               className={filterStatus === status ? styles.filterButton : styles.filterButtonSecondary}
               appearance="secondary"
               onClick={() => setFilterStatus(status)}
-              style={filterStatus === status ? { backgroundColor: '#2B1B5E', color: 'white', border: '1px solid #2B1B5E' } : {}}
+              style={filterStatus === status ? { backgroundColor: 'var(--color-dark-navy)', color: 'white', border: '1px solid #2B1B5E' } : {}}
             >
               {status} ({count})
             </Button>
@@ -300,14 +300,14 @@ export default function ManageIdeasScreen() {
                         appearance="secondary"
                         icon={<CheckmarkCircle24Regular />}
                         onClick={() => handleApprove(idea.id)}
-                        style={{ backgroundColor: '#107C10', color: 'white', border: 'none' }}
+                        style={{ backgroundColor: 'var(--color-success)', color: 'white', border: 'none' }}
                       >
                         Aprobar
                       </Button>
                       <Button
                         appearance="secondary"
                         onClick={() => handleSendToReview(idea.id)}
-                        style={{ backgroundColor: '#2B1B5E', color: 'white', border: 'none', fontWeight: '600' }}
+                        style={{ backgroundColor: 'var(--color-dark-navy)', color: 'white', border: 'none', fontWeight: '600' }}
                       >
                         Enviar a revisión
                       </Button>
@@ -315,7 +315,7 @@ export default function ManageIdeasScreen() {
                         appearance="secondary"
                         icon={<DismissCircle24Regular />}
                         onClick={() => handleReject(idea.id)}
-                        style={{ backgroundColor: '#D13438', color: 'white', border: 'none' }}
+                        style={{ backgroundColor: 'var(--color-danger)', color: 'white', border: 'none' }}
                       >
                         Rechazar
                       </Button>
@@ -328,7 +328,7 @@ export default function ManageIdeasScreen() {
                         appearance="secondary"
                         icon={<CheckmarkCircle24Regular />}
                         onClick={() => handleApprove(idea.id)}
-                        style={{ backgroundColor: '#107C10', color: 'white', border: 'none', fontWeight: '600' }}
+                        style={{ backgroundColor: 'var(--color-success)', color: 'white', border: 'none', fontWeight: '600' }}
                       >
                         Aprobar
                       </Button>
@@ -336,7 +336,7 @@ export default function ManageIdeasScreen() {
                         appearance="secondary"
                         icon={<DismissCircle24Regular />}
                         onClick={() => handleReject(idea.id)}
-                        style={{ backgroundColor: '#D13438', color: 'white', border: 'none', fontWeight: '600' }}
+                        style={{ backgroundColor: 'var(--color-danger)', color: 'white', border: 'none', fontWeight: '600' }}
                       >
                         Rechazar
                       </Button>
@@ -347,7 +347,7 @@ export default function ManageIdeasScreen() {
                     <Button
                       appearance="secondary"
                       onClick={() => handleConvert(idea.id)}
-                      style={{ backgroundColor: '#2B1B5E', color: 'white', border: 'none', fontWeight: '600' }}
+                      style={{ backgroundColor: 'var(--color-dark-navy)', color: 'white', border: 'none', fontWeight: '600' }}
                     >
                       Convertir a iniciativa
                     </Button>
@@ -357,7 +357,7 @@ export default function ManageIdeasScreen() {
                     <Button
                       appearance="secondary"
                       onClick={() => handleSendToReview(idea.id)}
-                      style={{ backgroundColor: '#2B1B5E', color: 'white', border: 'none', fontWeight: '600' }}
+                      style={{ backgroundColor: 'var(--color-dark-navy)', color: 'white', border: 'none', fontWeight: '600' }}
                     >
                       Reconsiderar
                     </Button>
@@ -371,7 +371,7 @@ export default function ManageIdeasScreen() {
 
       <Button
         appearance="secondary"
-        style={{ marginTop: '24px', backgroundColor: '#2B1B5E', color: 'white', border: 'none', fontWeight: '600' }}
+        style={{ marginTop: '24px', backgroundColor: 'var(--color-dark-navy)', color: 'white', border: 'none', fontWeight: '600' }}
         onClick={goBack}
       >
         Volver

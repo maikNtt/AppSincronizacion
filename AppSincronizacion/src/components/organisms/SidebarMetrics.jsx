@@ -13,7 +13,7 @@ export default function SidebarMetrics({ ideas, theme, isDark }) {
   }, []);
 
   // Paleta de colores
-  const COLORS = ['#6B46B8', '#2B1B5E', '#9D7FDD', '#553373', '#402060'];
+  const COLORS = ['var(--color-primary)', 'var(--color-dark-navy)', '#9D7FDD', 'var(--color-secondary)', 'var(--color-secondary)'];
 
   return (
     <div

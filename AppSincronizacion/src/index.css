@@ -1,6 +1,21 @@
 /* CoE IA Sync App — Estilos globales */
 /* Tipografía: Segoe UI (nativa de Windows/M365) con fallbacks */
 
+:root {
+  /* NTT DATA Corporate Light Theme Tokens - Vibrant */
+  --color-primary: #0072CE;      /* Vibrant Primary Blue */
+  --color-secondary: #008BCB;    /* Bright Secondary Blue */
+  --color-dark-navy: #0A1435;    /* Deep Smart Navy */
+  --color-warning: #F2A900;      /* Vibrant Yellow/Orange */
+  --color-danger: #E35205;       /* Vibrant Red */
+  --color-success: #107C10;      /* Vibrant Green */
+  
+  --color-bg-app: #F4F6F9;       /* App Background slightly cooler */
+  --color-bg-card: #FFFFFF;      /* Card Background */
+  --color-text-primary: #0A1435; /* Main Text */
+  --color-border: #D1D5DB;       /* Border Color stronger for contrast */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +24,8 @@
 
 body {
   font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
-  background-color: #FAFAFA;
-  color: #323130;
+  background-color: var(--color-bg-app);
+  color: var(--color-text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -50,8 +65,8 @@ body {
   background-color: #A19F9D;
 }
 
-/* Focus visible para accesibilidad - Morado principal */
+/* Focus visible para accesibilidad - Vibrant Blue */
 :focus-visible {
-  outline: 2px solid #6B46B8;
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }

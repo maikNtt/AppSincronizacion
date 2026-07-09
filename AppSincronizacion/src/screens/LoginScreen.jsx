@@ -25,7 +25,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     minHeight: '100vh',
-    backgroundColor: '#6B46B8',
+    backgroundColor: 'var(--color-primary)',
     padding: '24px',
   },
   card: {
@@ -37,7 +37,7 @@ const useStyles = makeStyles({
     textAlign: 'center',
   },
   icon: {
-    color: '#6B46B8',
+    color: 'var(--color-primary)',
     fontSize: '48px',
     marginBottom: '8px',
   },

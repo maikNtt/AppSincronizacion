@@ -15,10 +15,10 @@ import {
 import { useAppContext } from '../hooks/useAppContext';
 import { useDataContext } from '../hooks/useDataContext';
 import { useToast } from '../hooks/useToast';
-import InitiativeInfo from '../components/initiative/InitiativeInfo';
-import StatusTimeline from '../components/initiative/StatusTimeline';
-import DocumentsList from '../components/initiative/DocumentsList';
-import { InitiativeStatusBadge } from '../components/shared/Badges';
+import InitiativeInfo from '../components/organisms/InitiativeInfo';
+import StatusTimeline from '../components/organisms/StatusTimeline';
+import DocumentsList from '../components/organisms/DocumentsList';
+import { InitiativeStatusBadge } from '../components/atoms/Badges';
 import { INITIATIVE_NEXT_STATUS } from '../utils/constants';
 import { canManage } from '../utils/helpers';
 
@@ -50,7 +50,7 @@ const useStyles = makeStyles({
   code: {
     fontSize: '13px',
     fontWeight: '600',
-    color: '#6B46B8',
+    color: 'var(--color-primary)',
     fontFamily: '"Consolas", monospace',
   },
   actions: {

@@ -19,8 +19,8 @@ import InitiativeDetailScreen from './screens/InitiativeDetailScreen';
 import BacklogScreen from './screens/BacklogScreen';
 
 // Layout
-import AppHeader from './components/layout/AppHeader';
-import ScreenContainer from './components/layout/ScreenContainer';
+import AppHeader from './components/organisms/AppHeader';
+import ScreenContainer from './components/templates/ScreenContainer';
 
 export default function App() {
   const { currentScreen } = useAppContext();

@@ -27,13 +27,13 @@ const useStyles = makeStyles({
   },
   icon: {
     fontSize: '40px',
-    color: '#402060',
+    color: 'var(--color-secondary)',
     marginBottom: '12px',
     transition: 'color 0.3s ease, transform 0.3s ease',
   },
   cardHover: {
     ':hover .icon': {
-      color: '#6B46B8',
+      color: 'var(--color-primary)',
       transform: 'scale(1.1)',
     },
   },

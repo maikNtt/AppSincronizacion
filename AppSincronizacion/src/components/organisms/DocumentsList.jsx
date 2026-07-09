@@ -74,7 +74,7 @@ const useStyles = makeStyles({
     border: '1px solid #B8A3D8',
     marginTop: '12px',
     fontSize: '12px',
-    color: '#6B46B8',
+    color: 'var(--color-primary)',
     lineHeight: '16px',
   },
   empty: {
@@ -89,7 +89,7 @@ const FILE_ICONS = {
   Word: { Icon: Document24Regular, color: '#2B579A' },
   Excel: { Icon: Table24Regular, color: '#217346' },
   PowerPoint: { Icon: SlideText24Regular, color: '#D24726' },
-  PDF: { Icon: DocumentPdf24Regular, color: '#D13438' },
+  PDF: { Icon: DocumentPdf24Regular, color: 'var(--color-danger)' },
   Notebook: { Icon: Notebook24Regular, color: '#7719AA' },
 };
 

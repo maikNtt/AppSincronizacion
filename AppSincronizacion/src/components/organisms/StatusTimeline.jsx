@@ -10,7 +10,7 @@ import {
   Person16Regular,
 } from '@fluentui/react-icons';
 import { formatDate } from '../../utils/helpers';
-import { InitiativeStatusBadge } from '../shared/Badges';
+import { InitiativeStatusBadge } from '../atoms/Badges';
 
 const useStyles = makeStyles({
   section: {
@@ -56,7 +56,7 @@ const useStyles = makeStyles({
     width: '12px',
     height: '12px',
     borderRadius: '50%',
-    backgroundColor: '#6B46B8',
+    backgroundColor: 'var(--color-primary)',
     border: '2px solid white',
     boxShadow: tokens.shadow2,
     zIndex: 1,

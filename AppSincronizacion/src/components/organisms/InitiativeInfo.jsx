@@ -3,7 +3,7 @@
 // En Power Apps se usaría: Form.DataSource = Initiatives, Form.Item = LookUp(Initiatives, id = varId)
 
 import { makeStyles, tokens, Text } from '@fluentui/react-components';
-import { PriorityBadge, ComplexityBadge, InitiativeStatusBadge } from '../shared/Badges';
+import { PriorityBadge, ComplexityBadge, InitiativeStatusBadge } from '../atoms/Badges';
 import { formatDate } from '../../utils/helpers';
 
 const useStyles = makeStyles({
@@ -66,7 +66,7 @@ export default function InitiativeInfo({ initiative }) {
       <div className={styles.grid}>
         <div className={styles.field}>
           <Text className={styles.label}>Código</Text>
-          <Text className={styles.value} style={{ fontFamily: '"Consolas", monospace', color: '#6B46B8', fontWeight: 600 }}>
+          <Text className={styles.value} style={{ fontFamily: '"Consolas", monospace', color: 'var(--color-primary)', fontWeight: 600 }}>
             {initiative.code}
           </Text>
         </div>

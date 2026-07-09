@@ -12,8 +12,8 @@ import { makeStyles, tokens, Text } from '@fluentui/react-components';
 import { TaskListLtr24Regular } from '@fluentui/react-icons';
 import { useAppContext } from '../hooks/useAppContext';
 import { useDataContext } from '../hooks/useDataContext';
-import AreaSelector from '../components/shared/AreaSelector';
-import { PriorityBadge, ComplexityBadge, InitiativeStatusBadge } from '../components/shared/Badges';
+import AreaSelector from '../components/molecules/AreaSelector';
+import { PriorityBadge, ComplexityBadge, InitiativeStatusBadge } from '../components/atoms/Badges';
 import { formatDateShort, priorityOrder } from '../utils/helpers';
 import { SCREENS } from '../utils/constants';
 
@@ -38,7 +38,7 @@ const useStyles = makeStyles({
   },
   icon: {
     fontSize: '26px',
-    color: '#6B46B8',
+    color: 'var(--color-primary)',
   },
   table: {
     width: '100%',
@@ -79,7 +79,7 @@ const useStyles = makeStyles({
   code: {
     fontSize: '12px',
     fontWeight: '600',
-    color: '#6B46B8',
+    color: 'var(--color-primary)',
     fontFamily: '"Consolas", monospace',
   },
   name: {

@@ -11,8 +11,8 @@ import { Board24Regular } from '@fluentui/react-icons';
 import { useAppContext } from '../hooks/useAppContext';
 import { useDataContext } from '../hooks/useDataContext';
 import { useToast } from '../hooks/useToast';
-import KanbanBoard from '../components/kanban/KanbanBoard';
-import AreaSelector from '../components/shared/AreaSelector';
+import KanbanBoard from '../components/organisms/KanbanBoard';
+import AreaSelector from '../components/molecules/AreaSelector';
 import { SCREENS } from '../utils/constants';
 
 const useStyles = makeStyles({
@@ -36,7 +36,7 @@ const useStyles = makeStyles({
   },
   icon: {
     fontSize: '26px',
-    color: '#6B46B8',
+    color: 'var(--color-primary)',
   },
 });
 

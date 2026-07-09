@@ -15,10 +15,10 @@ const THEMES = {
     card: '#FFFFFF',
     shadow: '0 2px 8px rgba(64, 32, 96, 0.08)',
     shadowHover: '0 8px 20px rgba(64, 32, 96, 0.12)',
-    headerGradient: 'linear-gradient(135deg, #2B1B5E 0%, #402060 50%, #553373 100%)',
-    headerBg: '#6B46B8',
-    accent: '#6B46B8',
-    accentDark: '#2B1B5E',
+    headerGradient: 'var(--color-dark-navy)',
+    headerBg: 'var(--color-primary)',
+    accent: 'var(--color-primary)',
+    accentDark: 'var(--color-dark-navy)',
   },
   dark: {
     name: 'dark',
@@ -35,7 +35,7 @@ const THEMES = {
     card: '#141418',         // Cards: ligeramente más claro que fondo principal
     shadow: '0 2px 8px rgba(0, 0, 0, 0.5)',
     shadowHover: '0 8px 20px rgba(0, 0, 0, 0.7)',
-    headerGradient: 'linear-gradient(135deg, #0A0A0D 0%, #1A0F28 50%, #2D1A3F 100%)',
+    headerGradient: 'var(--color-dark-navy)',
     headerBg: '#0F0514',     // Header: más oscuro aún
     accent: '#BB88FF',       // Accents: morado claro para visibilidad
     accentDark: '#9966DD',

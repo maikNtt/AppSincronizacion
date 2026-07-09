@@ -39,7 +39,7 @@ const useStyles = makeStyles({
   },
   headerIcon: {
     fontSize: '28px',
-    color: '#2B1B5E',
+    color: 'var(--color-dark-navy)',
   },
   title: {
     fontSize: '22px',
@@ -117,12 +117,12 @@ const useStyles = makeStyles({
   },
   kpiIcon: {
     fontSize: '32px',
-    color: '#2B1B5E',
+    color: 'var(--color-dark-navy)',
   },
   kpiValue: {
     fontSize: '32px',
     fontWeight: '800',
-    color: '#2B1B5E',
+    color: 'var(--color-dark-navy)',
   },
   kpiLabel: {
     fontSize: '12px',
@@ -213,7 +213,7 @@ export default function ManageInitiativesScreen() {
           className={styles.filterButton}
           appearance="secondary"
           onClick={() => setFilterStatus(null)}
-          style={!filterStatus ? { backgroundColor: '#2B1B5E', color: 'white', border: '1px solid #2B1B5E' } : {}}
+          style={!filterStatus ? { backgroundColor: 'var(--color-dark-navy)', color: 'white', border: '1px solid #2B1B5E' } : {}}
         >
           Todas ({teamInitiatives.length})
         </Button>
@@ -225,7 +225,7 @@ export default function ManageInitiativesScreen() {
               className={styles.filterButton}
               appearance="secondary"
               onClick={() => setFilterStatus(status)}
-              style={filterStatus === status ? { backgroundColor: '#2B1B5E', color: 'white', border: '1px solid #2B1B5E' } : {}}
+              style={filterStatus === status ? { backgroundColor: 'var(--color-dark-navy)', color: 'white', border: '1px solid #2B1B5E' } : {}}
             >
               {status} ({count})
             </Button>
@@ -289,7 +289,7 @@ export default function ManageInitiativesScreen() {
                             className={styles.actionButton}
                             onClick={() => handleStatusChange(initiative.id, nextStatus)}
                             icon={<ArrowRight24Regular />}
-                            style={{ backgroundColor: '#2B1B5E', color: 'white', border: 'none', fontSize: '11px' }}
+                            style={{ backgroundColor: 'var(--color-dark-navy)', color: 'white', border: 'none', fontSize: '11px' }}
                           >
                             {nextStatus === INITIATIVE_STATUSES.EN_PROGRESO ? 'Iniciar' : 'Revisar'}
                           </Button>
@@ -300,7 +300,7 @@ export default function ManageInitiativesScreen() {
                             className={styles.actionButton}
                             onClick={() => handleComplete(initiative.id)}
                             icon={<CheckmarkCircle24Regular />}
-                            style={{ backgroundColor: '#107C10', color: 'white', border: 'none', fontSize: '11px' }}
+                            style={{ backgroundColor: 'var(--color-success)', color: 'white', border: 'none', fontSize: '11px' }}
                           >
                             Completar
                           </Button>
@@ -312,7 +312,7 @@ export default function ManageInitiativesScreen() {
                               className={styles.actionButton}
                               onClick={() => handleCancel(initiative.id)}
                               icon={<DismissCircle24Regular />}
-                              style={{ backgroundColor: '#D13438', color: 'white', border: 'none', fontSize: '11px' }}
+                              style={{ backgroundColor: 'var(--color-danger)', color: 'white', border: 'none', fontSize: '11px' }}
                             >
                               Cancelar
                             </Button>
@@ -329,7 +329,7 @@ export default function ManageInitiativesScreen() {
 
       <Button
         appearance="secondary"
-        style={{ marginTop: '24px', backgroundColor: '#2B1B5E', color: 'white', border: 'none', fontWeight: '600' }}
+        style={{ marginTop: '24px', backgroundColor: 'var(--color-dark-navy)', color: 'white', border: 'none', fontWeight: '600' }}
         onClick={goBack}
       >
         Volver

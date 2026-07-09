@@ -1,54 +1,48 @@
 import { createLightTheme } from '@fluentui/react-components';
 
-// Brand ramp de 16 tonos basada en MORADO (Microsoft 365 Purple - Office, Teams, Copilot)
-// Paleta morado-amarillo para compatibilidad Power Apps nativa
-// OPTIMIZADO: Botones más oscuros (#402060) para mejor contraste en fondo blanco
-const coeBrandRamp = {
-  10: '#2B1B5E',  // Morado muy oscuro
-  20: '#402060',  // Morado oscuro - BUTTON COLOR (más contraste)
-  30: '#553373',  // Morado medio-oscuro
-  40: '#6B46B8',  // Morado principal (PRIMARY BRAND) - hover/active
-  50: '#7F5AC2',  // Morado hover
-  60: '#9B7FCC',  // Morado claro
-  70: '#B8A3D8',  // Morado muy claro
-  80: '#E8DDF4',  // Morado background suave
-  90: '#F0E8F5',  // Morado fondo muy claro
-  100: '#F5F0F8', // Morado background ultra claro
-  110: '#F9F7FC', // Morado background casi blanco
-  120: '#FDFCFE', // Morado background blanco casi puro
+// Brand ramp de 16 tonos basada en VIBRANT PRIMARY BLUE (NTT DATA Corporate)
+const nttDataBrandRamp = {
+  10: '#0A1435',  // Smart Navy - Muy oscuro
+  20: '#07184A',  // Azul marino profundo
+  30: '#042263',  // Azul oscuro vibrante
+  40: '#004A99',  // Azul medio
+  50: '#0072CE',  // Primary Blue Vibrante (NTT DATA Primary)
+  60: '#338EDB',  // Azul claro brillante
+  70: '#66AAE8',  // Azul suave brillante
+  80: '#99C7F5',  // Azul background fuerte
+  90: '#B3D6F7',  // Azul fondo claro
+  100: '#CCE5F9', // Azul background ultra claro
+  110: '#E6F2FC', // Azul background casi blanco
+  120: '#F0F7FE', // Azul background blanco casi puro
   130: '#FFFFFF', // Blanco
   140: '#FFFFFF', // Blanco
-  150: '#F5F5F5', // Gris página
+  150: '#F4F6F9', // Gris página (AppBackground)
   160: '#FFFFFF', // Blanco puro
 };
 
-export const coeTheme = createLightTheme(coeBrandRamp);
+export const coeTheme = createLightTheme(nttDataBrandRamp);
 
-// Override para fondo ligeramente gris (como M365)
-coeTheme.colorNeutralBackground2 = '#F5F5F5';
+// Override para fondo ligeramente gris (Corporate Light Theme)
+coeTheme.colorNeutralBackground2 = '#F8F9FA';
 
-// Colores adicionales para la paleta morado-amarillo
+// Colores adicionales de la paleta NTT DATA
 export const colorPalette = {
-  // Morados principales
-  purple10: '#2B1B5E',
-  purple20: '#402060',
-  purple30: '#553373',
-  purple40: '#6B46B8', // PRIMARY
-  purple50: '#7F5AC2',
-  purple60: '#9B7FCC',
-  purple70: '#B8A3D8',
-  purple80: '#E8DDF4',
-
-  // Amarillos (accents)
-  yellow20: '#B88C00',
-  yellow30: '#C49C0D',
-  yellow40: '#FFB900', // ACCENT PRIMARY
-  yellow50: '#FFD461',
-  yellow60: '#FFE8B6',
-  yellow70: '#FFF4CE',
-
+  // Brand Colors
+  primary: '#0072CE',      // Vibrant Primary Blue
+  secondary: '#008BCB',    // Bright Secondary Blue
+  darkNavy: '#0A1435',     // Deep Smart Navy
+  
+  // Status / Semantic
+  warning: '#F2A900',      // Vibrant Yellow/Orange
+  danger: '#E35205',       // Vibrant Red
+  success: '#107C10',      // Vibrant Green
+  
   // Neutros
   white: '#FFFFFF',
+  bgApp: '#F4F6F9',
+  bgCard: '#FFFFFF',
+  border: '#D1D5DB',
+  
   gray10: '#F5F5F5',
   gray20: '#EDEBE9',
   gray30: '#D0CCCB',
@@ -56,10 +50,4 @@ export const colorPalette = {
   gray50: '#605E5C',
   gray60: '#323130',
   black: '#000000',
-
-  // Estados
-  error: '#D13438',
-  success: '#107C10',
-  info: '#6B46B8',
-  warning: '#FFB900',
 };

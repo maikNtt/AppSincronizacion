@@ -40,7 +40,7 @@ const useStyles = makeStyles({
   },
   headerIcon: {
     fontSize: '28px',
-    color: '#6B46B8',
+    color: 'var(--color-primary)',
   },
   title: {
     fontSize: '22px',

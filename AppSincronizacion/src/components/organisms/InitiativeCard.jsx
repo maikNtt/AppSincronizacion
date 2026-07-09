@@ -7,7 +7,7 @@
 
 import { makeStyles, tokens, Text, Button } from '@fluentui/react-components';
 import { ArrowRight16Regular } from '@fluentui/react-icons';
-import { PriorityBadge, ComplexityBadge } from '../shared/Badges';
+import { PriorityBadge, ComplexityBadge } from '../atoms/Badges';
 import { INITIATIVE_NEXT_STATUS } from '../../utils/constants';
 import { canManage } from '../../utils/helpers';
 
@@ -23,7 +23,7 @@ const useStyles = makeStyles({
   code: {
     fontSize: '11px',
     fontWeight: '600',
-    color: '#6B46B8',
+    color: 'var(--color-primary)',
     fontFamily: '"Consolas", "Courier New", monospace',
     marginBottom: '4px',
     display: 'block',
