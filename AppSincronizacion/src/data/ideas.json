@@ -1,0 +1,42 @@
+[
+  {
+    "id": "idea-1",
+    "title": "Automatización de reportes de fallas",
+    "current_problem": "Los reportes de fallas de equipos se generan manualmente en Excel cada semana, tomando aproximadamente 4 horas del equipo de mantenimiento. El proceso es propenso a errores de clasificación y los datos no están estandarizados.",
+    "proposed_solution": "Usar IA para clasificar fallas automáticamente desde los logs del sistema CMMS y generar el reporte semanal de forma automatizada, incluyendo análisis de tendencias.",
+    "status": "Aprobada",
+    "authors": ["u1", "u2"],
+    "team": "Mantenimiento",
+    "created_at": "2026-06-15T10:30:00Z"
+  },
+  {
+    "id": "idea-2",
+    "title": "Predicción de defectos en línea de producción",
+    "current_problem": "Los defectos se detectan al final de la línea de producción mediante inspección visual, generando un desperdicio del 3%. No hay forma de anticipar qué lotes tendrán mayor tasa de defectos.",
+    "proposed_solution": "Implementar un modelo de Machine Learning que prediga la probabilidad de defectos basándose en datos de sensores de temperatura, vibración y humedad en tiempo real.",
+    "status": "Nueva",
+    "authors": ["u3"],
+    "team": "QA",
+    "created_at": "2026-06-20T14:00:00Z"
+  },
+  {
+    "id": "idea-3",
+    "title": "Chatbot para consultas de documentación técnica",
+    "current_problem": "Los desarrolladores pasan aproximadamente 30 minutos al día buscando documentación en SharePoint, Confluence y repos internos. La información está fragmentada y no siempre actualizada.",
+    "proposed_solution": "Implementar RAG (Retrieval Augmented Generation) con Azure OpenAI sobre la documentación interna, permitiendo consultas en lenguaje natural con respuestas contextualizadas.",
+    "status": "En Revisión",
+    "authors": ["u5", "u6"],
+    "team": "Desarrollo",
+    "created_at": "2026-06-22T09:15:00Z"
+  },
+  {
+    "id": "idea-4",
+    "title": "Análisis automático de logs de pruebas",
+    "current_problem": "El equipo de QA revisa manualmente los logs de pruebas automatizadas para identificar patrones de falla. Esto consume 2 horas diarias y a veces se pasan por alto errores intermitentes.",
+    "proposed_solution": "Usar procesamiento de lenguaje natural para analizar logs, agrupar errores por causa raíz y generar un resumen ejecutivo diario con las fallas más críticas.",
+    "status": "Nueva",
+    "authors": ["u3", "u4"],
+    "team": "QA",
+    "created_at": "2026-06-28T11:00:00Z"
+  }
+]

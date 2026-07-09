@@ -1,0 +1,8 @@
+[
+  { "id": "u1", "name": "Ana García",      "email": "ana.garcia@empresa.com",      "team": "Mantenimiento", "role": "admin",   "is_coe": false },
+  { "id": "u2", "name": "Carlos López",    "email": "carlos.lopez@empresa.com",    "team": "Mantenimiento", "role": "miembro", "is_coe": false },
+  { "id": "u3", "name": "María Rodríguez", "email": "maria.rodriguez@empresa.com", "team": "QA",            "role": "admin",   "is_coe": false },
+  { "id": "u4", "name": "Juan Martínez",   "email": "juan.martinez@empresa.com",   "team": "QA",            "role": "miembro", "is_coe": false },
+  { "id": "u5", "name": "Laura Sánchez",   "email": "laura.sanchez@empresa.com",   "team": "Desarrollo",    "role": "admin",   "is_coe": true  },
+  { "id": "u6", "name": "Pedro Hernández", "email": "pedro.hernandez@empresa.com", "team": "Desarrollo",    "role": "miembro", "is_coe": false }
+]

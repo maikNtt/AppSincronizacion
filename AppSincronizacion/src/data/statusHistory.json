@@ -1,0 +1,56 @@
+[
+  {
+    "id": "sh-1",
+    "initiative_id": "init-1",
+    "from_status": "Backlog",
+    "to_status": "En Progreso",
+    "changed_by": "u1",
+    "changed_at": "2026-06-20T09:00:00Z",
+    "notes": "Equipo asignado. Se inicia desarrollo del clasificador de fallas con datos históricos del CMMS."
+  },
+  {
+    "id": "sh-2",
+    "initiative_id": "init-4",
+    "from_status": "Backlog",
+    "to_status": "En Progreso",
+    "changed_by": "u1",
+    "changed_at": "2026-06-12T10:00:00Z",
+    "notes": "Inicio de integración con sensores del área de producción."
+  },
+  {
+    "id": "sh-3",
+    "initiative_id": "init-4",
+    "from_status": "En Progreso",
+    "to_status": "QA",
+    "changed_by": "u1",
+    "changed_at": "2026-06-28T16:30:00Z",
+    "notes": "Modelo v1 entrenado y desplegado en ambiente de pruebas. Pendiente validación con datos en vivo."
+  },
+  {
+    "id": "sh-4",
+    "initiative_id": "init-5",
+    "from_status": "Backlog",
+    "to_status": "En Progreso",
+    "changed_by": "u5",
+    "changed_at": "2026-05-20T08:00:00Z",
+    "notes": "Piloto con 3 APIs del módulo de inventario."
+  },
+  {
+    "id": "sh-5",
+    "initiative_id": "init-5",
+    "from_status": "En Progreso",
+    "to_status": "QA",
+    "changed_by": "u5",
+    "changed_at": "2026-06-01T14:00:00Z",
+    "notes": "Piloto completado. Revisión de calidad de la documentación generada."
+  },
+  {
+    "id": "sh-6",
+    "initiative_id": "init-5",
+    "from_status": "QA",
+    "to_status": "Completada",
+    "changed_by": "u5",
+    "changed_at": "2026-06-10T11:00:00Z",
+    "notes": "Validación exitosa. Se despliega para todas las APIs del equipo de Desarrollo."
+  }
+]
